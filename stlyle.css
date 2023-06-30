@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GENERAL STYLE */
+.container {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER & NAV */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+header .main-nav {
+  position: relative;
+  right: 9px;
+  padding: 10px 30px;
+  border: 1px solid cyan;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0fff8;
+  box-shadow: 0 3px 20px rgba(146, 146, 146, 0.7);
+}
+
+.main-nav .main-logo {
+  position: relative;
+}
+
+.main-logo p {
+  font-size: 0.6em;
+}
+
+.main-nav h1 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  user-select: none;
+  color: rgb(0, 0, 73);
+}
+
+.main-nav a {
+  font-weight: 400;
+  color: rgb(17, 17, 17);
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.main-nav button {
+  padding: 10px 25px;
+  outline: none;
+  border: 0;
+  border-radius: 25px;
+  font-size: 1em;
+  background-color: #0f4d51;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* LEAD/HOME SECTION */
+
+.lead-sect {
+  position: relative;
+  top: 225px;
+  left: 0;
+  min-height: 100px;
+  margin: auto;
+  margin-bottom: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left(text with form) */
+.lead-sect .lead-left {
+  width: 60%;
+  margin-top: -60px;
+}
+.lead-left h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+.lead-left h2 > span {
+  font-weight: 400;
+}
+.lead-left p {
+  position: relative;
+  left: 10px;
+  margin: 20px 0;
+  width: 420px;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+.lead-left p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 70px;
+}
+
+.input-box {
+  position: relative;
+  margin-top: 25px;
+}
+
+.input-box input[type="email"] {
+  padding: 10px 40px 10px 10px;
+  width: 285px;
+  outline: none;
+  border: 1px solid #0f4d51;
+  border-radius: 5px;
+}
+
+.input-box input[type="submit"] {
+  position: absolute;
+  left: 280px;
+  top: -4px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  background-color: #0f4d51;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* RIGHT(images on lead/home section) */
+.lead-right {
+  position: relative;
+  width: 40%;
+  height: 450px;
+  background-image: url(./imgs/img001.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  border-top-right-radius: 300px;
+  border-top-left-radius: 300px;
+  border-bottom-right-radius: 100px;
+}
+
+.lead-right .topimg {
+  margin-top: -40px;
+  margin-left: -40px;
+  width: 120px;
+  height: 120px;
+  background: url(./imgs/img002.jpg) no-repeat bottom center;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.lead-right .topimg::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(168, 128, 26);
+  border-radius: 10px;
+}
+
+/* TEAM SECTION */
+.team-wrapper {
+  width: 90vw;
+  padding: 50px;
+  margin: 350px auto 100px;
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 10px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+.team .whyDbest h2 {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.team .whyDbest p {
+  line-height: 1.5em;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 100px;
+}
+.team-grid img {
+  position: relative;
+  width: 35px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.teacher h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.teacher p {
+  color: rgb(41, 41, 41);
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  bottom: 30px;
+  width: 90vw;
+  margin: 50px auto 10px;
+  background-color: #072224;
+  height: 300px;
+}
+footer .wrapper {
+  position: relative;
+  color: white;
+  height: 300px;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div {
+  position: relative;
+  text-align: left;
+}
+
+footer div h2 {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+footer div img {
+  position: relative;
+  width: 35px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.teacher img {
+  background-color: cyan;
+}
+
+.oncourse img {
+  background-color: orangered;
+}
+
+.support img {
+  background-color: blueviolet;
+}
